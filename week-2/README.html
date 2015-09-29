@@ -1,0 +1,485 @@
+<h1 id="week-2-review-of-basic-web-development-techniques">Week 2: Review of Basic Web Development Techniques</h1>
+<h2 id="table-of-contents">Table of Contents</h2>
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+<ul>
+<li><a href="#day-2-htmlcss-review">Day 3: HTML/CSS Review</a><ul>
+<li><a href="#fork-kcc-nma-art258assignments">Fork kcc-nma-art258/assignments</a></li>
+<li><a href="#creating-a-basic-html-page">Creating a basic HTML page</a><ul>
+<li><a href="#declare-your-doctype">Declare your !DOCTYPE</a></li>
+<li><a href="#create-your-opening-and-closing-html-tags">Create your opening and closing HTML tags.</a></li>
+<li><a href="#break-your-down-page-structure">Break your down page structure</a></li>
+<li><a href="#ids-vs-classes-ie-serial-number-vs-barcodes">IDs vs Classes (ie. serial number vs barcodes)</a></li>
+<li><a href="#let%E2%80%99s-start-to-style">Let’s start to style</a></li>
+<li><a href="#linking-your-stylesheet">Linking your stylesheet</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#styling-sections">Styling sections</a></li>
+<li><a href="#reset-browser-default-styling">Reset browser default styling</a></li>
+<li><a href="#content-area-and-centering">Content Area and Centering</a></li>
+<li><a href="#adding-a-logo-and-navigation">Adding a logo and navigation</a></li>
+<li><a href="#absolute-positioning-elements">Absolute positioning elements</a></li>
+<li><a href="#create-columns">Create columns</a></li>
+<li><a href="#floating">Floating</a></li>
+<li><a href="#clearing">Clearing</a></li>
+<li><a href="#more-pseudos">More Pseudos</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+<h2 id="day-3-html-css-review">Day 3: HTML/CSS Review</h2>
+<h3 id="fork-kcc-nma-art258-assignments-https-github-com-kcc-nma-art258-assignments-">Fork <a href="https://github.com/kcc-nma-art258/assignments">kcc-nma-art258/assignments</a></h3>
+<ul>
+<li><a href="https://help.github.com/articles/fork-a-repo/">Forking a repository on GitHub</a></li>
+<li><a href="https://help.github.com/desktop/guides/contributing/cloning-a-repository-from-github-desktop/">Cloning a repository from GitHub Desktop</a></li>
+<li>Open Atom (or your text editor) and add the <strong>assignments</strong> folder to your project tree view by clicking <em>&#39;File &gt; Add Project Folder...&#39;</em> or using the <code>cmd-shift-o</code> keyboard shortcut.</li>
+<li>Navigate to <strong>week-1/exercise/</strong> and open the <code>index.html</code> and <code>style.css</code> files</li>
+<li>In GitHub Desktop, create a new branch called <code>week-2-assignments</code>; we&#39;ll be working off of this branch for this week.</li>
+</ul>
+<h3 id="creating-a-basic-html-page">Creating a basic HTML page</h3>
+<p><strong>Topics Covered</strong></p>
+<ul>
+<li>Basic HTML structure</li>
+<li>CSS linking</li>
+<li>ID&#39;s versus Classes</li>
+<li>Practical naming</li>
+<li>Positioning<ul>
+<li>Relative</li>
+<li>Absolute</li>
+<li>Fixed</li>
+</ul>
+</li>
+<li>Floats<ul>
+<li>Clearing floats</li>
+</ul>
+</li>
+<li>Pseudo-elements<ul>
+<li><code>:before</code>/<code>:after</code></li>
+</ul>
+</li>
+<li>Pseudo-classes<ul>
+<li><code>:first-child</code>/<code>:last-child</code></li>
+<li><code>:nth-child()</code></li>
+</ul>
+</li>
+</ul>
+<h4 id="declare-your-doctype">Declare your !DOCTYPE</h4>
+<p>This tells the browser what version of HTML you are using and must come before the HTML tag. The HTML5 !DOCTYPE is the simplest to remember:</p>
+<pre><code class="lang-html">&lt;!DOCTYPE html&gt;
+</code></pre>
+<h4 id="create-your-opening-and-closing-html-tags-">Create your opening and closing HTML tags.</h4>
+<p>This is where all your HTML will go.</p>
+<pre><code class="lang-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  ...
+&lt;/html&gt;
+</code></pre>
+<p>Create your opening and closing <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code> tags.
+The <code>&lt;head&gt;</code> tag must include a title for the document. The head is also where you will include your stylesheets (ie. <code>&lt;link /&gt;</code>) and meta tags (ie. <code>&lt;meta /&gt;</code>) for the site. You can also include scripts in the <code>&lt;head&gt;</code> tag, however it&#39;s highly recommended that you place your scripts just above your closing <code>&lt;/body&gt;</code> tag for performance reasons. In your <code>&lt;head&gt;</code> tag, you will need to declare what type of character set you will be using for the document.</p>
+<pre><code class="lang-html">&lt;meta charset=&quot;UTF-8&quot;&gt;
+</code></pre>
+<p>You will need to also give your page a <code>&lt;title&gt;</code> tag.</p>
+<pre><code class="lang-html">&lt;title&gt;My First In Class Assignment&lt;/title&gt;
+</code></pre>
+<p>The <code>&lt;body&gt;</code> tag will define the document’s body and where your HTML will be.</p>
+<pre><code class="lang-html">&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt;My First In Class Assignment&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  ...
+&lt;/body&gt;
+</code></pre>
+<p>All together now.</p>
+<pre><code class="lang-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt;My First In Class Assignment&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  ...
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h4 id="break-your-down-page-structure">Break your down page structure</h4>
+<p><a href="http://www.kahalamallcenter.com/">Kahala Mall Center</a></p>
+<p>Study this page structure and understand how things can be broken down into sections. By keeping everything simple, we can grasp the general layout and work on the details later.</p>
+<p><img src="images/wireframe.png" alt="Kahala Page Wireframe"></p>
+<p>Our website has 5 main sections:</p>
+<ul>
+<li>header</li>
+<li>search</li>
+<li>hero section</li>
+<li>information</li>
+<li>footer</li>
+</ul>
+<p>Let’s think about every section as a separate element and divide them accordingly within our HTML. It&#39;s also helpful to create comments to keep track of each element.</p>
+<pre><code class="lang-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt;My First In Class Assignment&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+  &lt;!-- Header Section --&gt;
+  &lt;header&gt;
+  &lt;/header&gt;
+
+  &lt;!-- Search Section --&gt;
+  &lt;section&gt;
+  &lt;/section&gt;
+
+  &lt;!-- Hero Section --&gt;
+  &lt;section&gt;
+  &lt;/section&gt;
+
+  &lt;!-- Information Section --&gt;
+  &lt;section&gt;
+  &lt;/section&gt;
+
+  &lt;!-- Footer Section --&gt;
+  &lt;footer&gt;
+  &lt;/footer&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h4 id="ids-vs-classes-ie-serial-number-vs-barcodes-">IDs vs Classes (ie. serial number vs barcodes)</h4>
+<p><code>id</code>: unique identifiers <em>(serial number)</em></p>
+<ul>
+<li>Only one ID per element</li>
+<li>Only one ID of that kind per page</li>
+<li>Browser will navigate (scroll to) element with ID in url (ie. <a href="http://yourdomain.com#comments">http://yourdomain.com#comments</a>)</li>
+</ul>
+<p><code>class</code>: reusable classifiers <em>(barcodes)</em></p>
+<ul>
+<li>Same class on multiple elements allowed</li>
+<li>Multiple classes on same elements allowed</li>
+</ul>
+<p><strong>When should you use an ID versus a Class?</strong></p>
+<p><strong>Rule of thumb:</strong> use id&#39;s for behavior and classes for styling</p>
+<p>An element can have both an <code>id</code> and a <code>class</code>, so start with a <code>class</code>. If you need something to be unique for a specific behavior (like navigation), add a unique <code>id</code> for that page.</p>
+<pre><code class="lang-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt;My First In Class Assignment&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+  &lt;!-- Header Section --&gt;
+  &lt;header class=&quot;main-header&quot;&gt;
+  &lt;/header&gt;
+
+  &lt;!-- Search Section --&gt;
+  &lt;section class=&quot;search&quot;&gt;
+  &lt;/section&gt;
+
+  &lt;!-- Hero Section --&gt;
+  &lt;section class=&quot;hero&quot;&gt;
+  &lt;/section&gt;
+
+  &lt;!-- Info Section --&gt;
+  &lt;section class=&quot;site-info&quot;&gt;
+  &lt;/section&gt;
+
+  &lt;!-- Footer Section --&gt;
+  &lt;footer class=&quot;main-footer&quot;&gt;
+  &lt;/footer&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p><strong>Question:</strong> What would be the final background color of our <code>&lt;header class=&quot;main-header&quot;&gt;&lt;/header&gt;</code> element if we also added an ID of <em>main-header</em>, (ie. <code>id=&quot;main-header&quot;</code>) with the following CSS rules applied?</p>
+<pre><code class="lang-css"> #main-header {
+   background-color: green;
+ }
+
+ .main-header {
+   background-color: blue;
+ }
+
+ header {
+   background-color: purple;
+ }
+</code></pre>
+<p>Now is a good point to save what we have in Git &amp; sync with github.com before we continue. It is considered good practice to make frequent commits (ie. save in git) while you&#39;re working, but reserve syncing until you complete a feature branch or you&#39;re finished working for the moment (whichever comes first).</p>
+<h4 id="let-s-start-to-style">Let’s start to style</h4>
+<p>Create your stylesheet and save it in a folder called <code>styles</code>. The folder should live in the same directory as your home page <code>index.html</code>. What you name your stylesheets is up to you, but let’s keep it simple and call it <code>style.css</code>.</p>
+<p>You should now have a folder named <code>styles</code> with a file called <code>style.css</code> within it.</p>
+<h4 id="linking-your-stylesheet">Linking your stylesheet</h4>
+<p>In your <code>index.html</code>, link your stylesheet in the <code>&lt;head&gt;</code> of your document as such:</p>
+<pre><code class="lang-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt;My First In Class Assignment&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;styles/style.css&quot;&gt;
+&lt;/head&gt;
+...
+</code></pre>
+<p><strong>Question:</strong>
+<em>If we moved <code>styles.css</code> out of the <code>styles</code> folder and in to the parent directory with <code>index.html</code> what would the new link be?</em></p>
+<h4 id="testing">Testing</h4>
+<p>In your <code>style.css</code>, give the body a background color of your choice.</p>
+<pre><code class="lang-css">body {
+  background-color: #FFCC00;
+}
+</code></pre>
+<p>Open your <code>index.html</code> file in your browser and confirm the background color was applied to the web page.</p>
+<h4 id="styling-sections">Styling sections</h4>
+<p>Let’s add more styling to the page. Since there is no content yet, none of the elements we created are being shown. We need to add a height to each element:</p>
+<pre><code class="lang-css">.main-header {
+  height: 60px;
+  background-color: green;
+}
+
+.search {
+  height: 60px;
+  background-color: orange;
+}
+
+.hero {
+  height: 460px;
+  background-color: red;
+}
+
+.site-info {
+  height: 260px;
+  background-color: purple;
+}
+
+.main-footer {
+  height: 200px;
+  background-color: blue;
+}
+</code></pre>
+<p><strong>Question:</strong>
+What would be the best way (most efficient/fastest) way if I wanted to apply the same styling to multiple elements?</p>
+<h4 id="reset-browser-default-styling">Reset browser default styling</h4>
+<p>All browsers will apply a default styling to elements thats slightly different from each other so we need to &#39;reset&#39; the styles so we can start from a consistent place cross-browser.</p>
+<p>A very simple reset can be something like this:</p>
+<pre><code class="lang-css">*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+}
+</code></pre>
+<p>However, this can be over simplistic and incomplete. There are additional CSS resets avaialble which also supply a handy set of defaults for things like typography and form controls. Lets take a look at <a href="http://meyerweb.com/eric/tools/css/reset/">Eric Meyer&#39;s CSS Reset</a>.
+A copy is included in this repo here: <a href="exercise/reset.css">reset.css</a></p>
+<p>Let&#39;s move the reset to our <code>styles</code> directory. This new file should be declared before our <code>style.css</code> file so we start with a clean document, free of any default browser styling.</p>
+<pre><code class="lang-html">&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt;My First In Class Assignment&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;styles/reset.css&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;styles/style.css&quot;&gt;
+&lt;/head&gt;
+</code></pre>
+<p>There are also other CSS resets available, including:</p>
+<ul>
+<li><a href="https://github.com/necolas/normalize.css/">normalize.css</a></li>
+<li><a href="http://html5doctor.com/html-5-reset-stylesheet/">HTML5 Doctor reset</a></li>
+<li><a href="https://github.com/yui/yui3/blob/master/src/cssreset/css/cssreset.css">Yahoo&#39;s YUI3 reset</a></li>
+</ul>
+<h4 id="content-area-and-centering">Content Area and Centering</h4>
+<p>Let’s add container area around all of the sections and give it a width, add a background color, and center it. Make the width 960px.</p>
+<p><strong>index.html</strong></p>
+<pre><code class="lang-html">&lt;div class=&quot;container&quot;&gt;
+  &lt;!-- Header Section --&gt;
+  &lt;header class=&quot;main-header&quot;&gt;
+  &lt;/header&gt;
+
+  &lt;!-- Search Section --&gt;
+  &lt;section class=&quot;search&quot;&gt;
+  &lt;/section&gt;
+
+  &lt;!-- Hero Section --&gt;
+  &lt;section class=&quot;hero&quot;&gt;
+  &lt;/section&gt;
+
+  &lt;!-- Info Section --&gt;
+  &lt;section class=&quot;site-info&quot;&gt;
+  &lt;/section&gt;
+
+  &lt;!-- Footer Section --&gt;
+  &lt;footer class=&quot;main-footer&quot;&gt;
+  &lt;/footer&gt;
+&lt;/div&gt;
+</code></pre>
+<p><strong>style.css</strong></p>
+<pre><code class="lang-css">.container {
+  width: 960px;
+  margin: 0 auto;
+  background: white;
+}
+</code></pre>
+<h4 id="adding-a-logo-and-navigation">Adding a logo and navigation</h4>
+<p>Within our header, add one <code>&lt;div&gt;</code> element and one <code>&lt;nav&gt;</code> element. One will be your logo and one will be your main navigation. Give them a class.</p>
+<pre><code class="lang-html">&lt;header class=&quot;main-header&quot;&gt;
+  &lt;div class=&quot;logo&quot;&gt;
+  &lt;/div&gt;
+
+  &lt;nav class=&quot;main-nav&quot;&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;
+</code></pre>
+<p>Once these items have been added, give each one a width, height and background color in your css.</p>
+<pre><code class="lang-css">.logo {
+  height: 60px;
+  width: 100px;
+  background: gray;
+}
+
+.main-nav {
+  height: 60px;
+  width: 400px;
+  background: purple;
+}
+</code></pre>
+<p>Add content or text within each element. For the <code>.main-nav</code> element, you will need to add an unordered list of items to replicate the navigation.</p>
+<h4 id="absolute-positioning-elements">Absolute positioning elements</h4>
+<p>We need to practice different positioning. Under the normal circumstances, you will probably not want to position items absolute unless you need them to be in a very specific location.</p>
+<p>In your css, add <code>position: absolute;</code> to your <code>.logo</code> and <code>.main-nav</code>. If you position something absolute, it will remove the element out of normal flow (how a browser normally renders something) and will reposition it on the page and will not affect any element around it.</p>
+<p>Now, add <code>top: 0;</code> and <code>left: 0;</code> to your <code>.logo</code>.</p>
+<pre><code class="lang-css">.logo {
+  width: 100px;
+  height: 40px;
+  background: gray;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+</code></pre>
+<p><strong>What happens?</strong></p>
+<p>Now try to position the main navigation absolute with a <code>top: 0;</code> and <code>right: 0;</code>.</p>
+<p><strong>What happens?</strong></p>
+<p>Absolute position looks for the first parent element which has <code>position: relative;</code> applied to it and will reposition it’s coordinates based on that parent element.</p>
+<p><strong>Question:</strong>
+How do we bring the two elements (logo and main nav) back into the container?</p>
+<h4 id="create-columns">Create columns</h4>
+<p>Let’s skip the search bar row and move on to the next HTML section. Create three <code>&lt;div&gt;</code> within the proper wrapper.</p>
+<pre><code class="lang-html">&lt;section class=&quot;site-info&quot;&gt;
+  &lt;div class=&quot;info-01 columns&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;info-02 columns&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;info-03 columns&quot;&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+</code></pre>
+<p>How wide should each column be? Add a <code>width: 25%;</code> to <code>.info-01</code> and <code>.info-02</code> and <code>width:50%;</code> to <code>.info-03</code>, a <code>height: 100px</code> to each one, and a unique background color to each element.</p>
+<h4 id="floating">Floating</h4>
+<p>To make all items display inline to each other in a row, we need to float them. In layman&#39;s terms, floating takes an element out of normal flow and moves them either to the far left or far right (depending on how you float the element).</p>
+<p><strong>Try this:</strong></p>
+<ul>
+<li>Float all elements left</li>
+<li>Float all elements right.</li>
+<li>Change the widths to all three elements to 60% and keep the float right.</li>
+<li>Change everything back to the original widths (50% and 25%) and make <code>.info-01</code> <code>float: left</code> and <code>.info-02</code> and <code>.info-03</code> <code>float: right</code>.</li>
+</ul>
+<p>Resources:</p>
+<ul>
+<li><a href="http://css-tricks.com/all-about-floats/">CSS Trick: All About Floats</a></li>
+</ul>
+<h4 id="clearing">Clearing</h4>
+<p>Any time you float an element, it takes it out of normal flow and will position it according to how you specify it. To reset the flow of content, you need to clear your floats.
+In the past, a common technique would be to add an empty element after all of the floats and in your css put <code>clear:both;</code> to remove all floats. That creates unnecessary markup and isn&#39;t scalable.</p>
+<p>For your main section <code>.site-info</code> element, add a style declaration of <code>height: auto;</code>. Let’s say we don’t know how tall the content area will be. What happens?
+Because the content is removed from normal flow, the main div thinks there is nothing in it, so it collapses the height to 0.</p>
+<p>How do we get our parent element <code>.site-info</code> to show up again?</p>
+<p>Nicolas Gallagher came up with a great <a href="http://nicolasgallagher.com/micro-clearfix-hack/">micro clearfix hack</a>. We will add the rule in the beginning of our CSS document as follows:</p>
+<pre><code class="lang-css">.cf:before,
+.cf:after {
+  content: &quot;&quot;;
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+</code></pre>
+<p>...and add the new <code>.cf</code> class to our markup...</p>
+<pre><code class="lang-html">&lt;section class=&quot;site-info cf&quot;&gt;
+...
+&lt;/section&gt;
+</code></pre>
+<p>The <code>.cf:after</code> selector may look unfamiliar, but it reads as follows</p>
+<blockquote>
+<p><em>All pseudo <code>:after</code> elements belonging to an element with the class <code>.cf</code>.</em></p>
+</blockquote>
+<p>The <code>:after</code> is known as a CSS <em>pseudo-class</em>. This type of pseudo class is only available in IE8+ and other modern browsers.</p>
+<p>Now, if you have floats in anything with the class of <code>.site-info</code>, it will automatically clear it and you don’t have to worry about setting a height.</p>
+<p><em>Note: Clearing only works on floats, not elements positioned absolutely.</em></p>
+<h4 id="more-pseudos">More Pseudos</h4>
+<p>Let’s clean up our HTML and how everything looks. Each column should have some spacing, so let’s change the width from 50% to 49% and 25% to 24%.</p>
+<p>Let’s give each column a left margin of 1% by adding it to our <code>.column</code> class.</p>
+<pre><code class="lang-css">.site-info .columns {
+  height: 100px;
+  margin: 0 0 0 1%;
+}
+
+.site-info .info-01,
+.site-info .info-02 {
+  width: 24%;
+}
+
+.site-info .info-03 {
+  width: 49%;
+}
+</code></pre>
+<p>Now, we have margin on both elements, but we don’t need a margin on the first element. How do we get rid of it? Let’s use <code>:first-child</code>, a <em>pseudo-class</em>.</p>
+<p><code>element:first-child</code> applies style rules to the first element of the matched elements.</p>
+<pre><code class="lang-css">.column:first-child {
+  margin: 0;
+}
+</code></pre>
+<p><em>Note: <code>:last-child</code> is <a href="http://caniuse.com/#search=last-child">not supported</a> in early versions of IE8, so confirm your browser support before implementing.</em></p>
+<p><code>:nth-child()</code></p>
+<p>What about making odd columns a different color?</p>
+<pre><code class="lang-css">element:nth-child(odd) {
+  background: red;
+}
+</code></pre>
+<p>What about making only the second column a different color?</p>
+<pre><code class="lang-css">element:nth-child(2) {
+  background: red;
+}
+</code></pre>
+<p>What about making every sixth column a different color?</p>
+<pre><code class="lang-css">element:nth-child(6n) {
+  background: red;
+}
+</code></pre>
+<p><strong>References:</strong></p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Writing_efficient_CSS">Mozilla: Writing Efficient CSS</a></li>
+<li><a href="http://www.standardista.com/wp-content/uploads/2012/01/specificity3.pdf">CSS Specificity</a></li>
+</ul>
+<h2 id="homework-creating-layouts-in-html-css">Homework: Creating layouts in HTML/CSS</h2>
+<ul>
+<li>In your <code>assignments</code> project, create a branch called <code>gh-pages</code></li>
+<li>In Atom, highlight all of the files in the project <strong>except the <code>.git</code> folder</strong> and delete them. <strong>Make sure you are on the gh-pages branch when you do this.</strong> Commit the changes so you start with an empty directory for the assignment.</li>
+<li>Pick a basic marketing website and sketch out the base layout structure, similar to the following structure: <a href="https://github.com/kcc-nma-art258/assignments/blob/master/week-2/images/wireframe.png">wireframe example</a> (created in <a href="https://www.fiftythree.com/paper">Paper by FiftyThree</a>)<ul>
+<li>Example sites:<ul>
+<li><a href="http://www.apple.com/">Apple</a></li>
+<li><a href="https://www.google.com/chrome/">Google Chrome</a></li>
+<li><a href="http://sass-lang.com/">Sass</a></li>
+<li><a href="http://www.bohemiancoding.com/sketch/">Bohemian Coding Sketch</a></li>
+<li><a href="http://www.invisionapp.com/">Invision App</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Scan or take a photograph of your sketch (or save a png if you created it digitally), and add it to the repository in a folder called <code>images</code>.</li>
+<li>Complete an HTML/CSS wireframe based on the sketch you created like the class example. Your <code>gh-pages</code> branch should include:<ul>
+<li>An <code>index.html</code> file</li>
+<li>A <code>style.css</code> file</li>
+<li>An <code>images</code> folder with an image of your wireframe</li>
+</ul>
+</li>
+<li>Sync this with your GitHub account online by 11:59pm Monday night.</li>
+</ul>

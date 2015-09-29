@@ -1,0 +1,104 @@
+<h1 id="week-3-continue-review-of-basic-web-development-techniques">Week 3: Continue Review of Basic Web Development Techniques</h1>
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+<ul>
+<li><a href="#review-of-github-devtools-and-htmlcss-building-blocks">Review of GitHub, DevTools and HTML/CSS building blocks</a><ul>
+<li><a href="#atom-settings">Atom Settings</a></li>
+<li><a href="#github-review">GitHub Review</a></li>
+<li><a href="#setting-up-chrome-devtools">Setting up Chrome DevTools</a><ul>
+<li><a href="#live-editing-in-chrome">Live-editing in Chrome</a></li>
+<li><a href="#resources">Resources</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#if-you-are-already-done-or-finish-early">If you are already done or finish early...</a></li>
+</ul>
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+<h2 id="review-of-github-devtools-and-html-css-building-blocks">Review of GitHub, DevTools and HTML/CSS building blocks</h2>
+<h3 id="atom-settings">Atom Settings</h3>
+<p>We&#39;re going to be building up to more complex sites over the week, so lets configure our editor to ignore some
+files that we don&#39;t want to get in our way while we&#39;re developing. This is a common practice and a configurable setting within most popular editors.</p>
+<p>Copy <code>(cmd + C)</code> the list of ignored file types below:</p>
+<pre><code class="lang-git"> *.cfg, .git, .hg, .svn, .DS_Store, ._*, Thumbs.db
+</code></pre>
+<p>Open Atom, and open <em>Atom &gt; Preferences</em> from the menu bar.</p>
+<p><img src="images/atom-screenshot-1.png" alt="Atom Screenshot"></p>
+<p>Click on the <strong>Settings</strong> menu, and paste the code in the <em>Ignored Names</em> list.</p>
+<p><img src="images/atom-screenshot-2.png" alt="Atom Screenshot 2"></p>
+<p>Click on the <strong>Packages</strong> menu, and type in <code>tree-view</code> in the <em>Installed Packages</em> input field. When the <strong>tree-view</strong> package appears under <em>Core Packages</em>, click on the settings button.</p>
+<p><img src="images/atom-screenshot-3.png" alt="Atom Screenshot 3"></p>
+<p>Under the Settings section, check <em>Hide Ignored Names</em></p>
+<p><img src="images/atom-screenshot-4.png" alt="Atom Screenshot 4"></p>
+<p>Now our configuration files won&#39;t get in the way!</p>
+<h3 id="github-review">GitHub Review</h3>
+<p>To make sure we&#39;re all on the same page, let&#39;s start by grabbing a fresh copy of our <code>assignments</code> project. If you already started one and completed the assignment, you can skip this part. However, if you got stuck or still confused about GitHub, I encourage you to do the following.</p>
+<p>First, go to github.com, find your fork of the assignments project, and got to the <em>Settings</em> in the bottom right side-bar.</p>
+<p><img src="images/github-1.png" alt="Github"></p>
+<p>Scroll down to the bottom where it says <strong>Danger Zone</strong> and click the big red button that says <code>Delete this repository</code>.</p>
+<p><img src="images/github-2.png" alt="Github 2"></p>
+<p>Click the button and retype the name of the repository (ie. <code>assignments</code>) to confirm deletion, then click the button that says <code>I understand the consequences, delete this repository</code>.</p>
+<p><img src="images/github-3.png" alt="Github 3"></p>
+<p>This might sound scary, but everything will be fine since we still have a local copy on our computers we can send back up to the cloud at any time. For now, let&#39;s remove the project from GitHub Desktop as well...</p>
+<p><img src="images/github-4.png" alt="Github 4"></p>
+<p>...and rename the file in finder to something else like <code>assignments_old</code>.</p>
+<p><img src="images/github-5.png" alt="Github 5"></p>
+<p>On github.com, navigate to the <a href="https://github.com/kcc-nma-art258/assignments">kcc-nma-art258/assigments</a> and fork the repository again.</p>
+<p><img src="images/github-6.png" alt="Github 6"></p>
+<p>And then in Github Desktop, clone the project again.</p>
+<p><img src="images/github-7.png" alt="Github 7"></p>
+<p>Once the project has finished cloning, create a new branch called <code>gh-pages</code>.</p>
+<p><img src="images/github-8.png" alt="Github 8"></p>
+<p>Right-click, and open the project in Atom. Once the project has been opened in Atom, highlight all of the files in the folder, then right-click and select DELETE. Confirm <code>Move to Trash</code>.</p>
+<p><img src="images/github-9.png" alt="Github 9"></p>
+<p>Back in Atom, commit those files and then sync. Now you&#39;re ready to start the Homework assignment! If you would like access to your previous projects, I can walk around and assist each of you with copying the resources back in your project from <code>assignments_old</code> individually.</p>
+<h3 id="setting-up-chrome-devtools">Setting up Chrome DevTools</h3>
+<p>When developing in the browser, you&#39;ll want to debug and see changes to your code while you&#39;re working. With Chrome Developer Tools, we have the ability to debug as well as edit our code live in the browser.</p>
+<p>Let&#39;s start by opening up the Chrome Developer Tools, by clicking on the menu icon in the top right corner; then <em>More Tools &gt; Developer Tools</em> or by using the shortcut <code>(cmd + opt + I)</code></p>
+<p><img src="images/chrome-devtools-1.png" alt="Chrome DevTools Screenshot"></p>
+<p>This will pop-open a pane for doing debugging and authoring.</p>
+<p>The main panels we&#39;ll be working with for the moment are the <em>Elements</em> and <em>Sources</em> Panel.</p>
+<p><strong>Elements Panel</strong></p>
+<p>This is where we can see a live preview of our HTML &amp; CSS. You can edit both here and see the changes take effect live on the page. This is also how you can see if something is going wrong.</p>
+<p><img src="images/chrome-devtools-2.png" alt="Chrome DevTools Screenshot 2"></p>
+<p><strong>Sources Panel</strong></p>
+<p>The sources panel acts as the editor of Chrome DevTools, allowing you to saving the changes CSS &amp; JS files and they&#39;ll be applied live on the page without reloading. HTML files can be edited here as well, however their changes require a page refresh.</p>
+<p><img src="images/chrome-devtools-3.png" alt="Chrome DevTools Screenshot 3"></p>
+<p>To setup live editing, add your projects workspace to the DevTools by right-clicking in the <em>Sources</em> sidebar pane and selecting <code>Add Folder to Workspace</code>.</p>
+<p><img src="images/chrome-devtools-4.png" alt="Chrome DevTools Screenshot 4"></p>
+<p><em>You can add individual projects at a time, but I simply add my entire </em>projects<em> folder to make things easier.</em></p>
+<p>Once you add the folder, Chrome will ask you to confirm access for DevTools. Just click <code>Allow</code>.</p>
+<p><img src="images/chrome-devtools-5.png" alt="Chrome DevTools Screenshot 5"></p>
+<p>Once you click allow, you&#39;ll see the folder added to your left hand pane. You can now browse your local web projects in Chrome like any other editor!</p>
+<h4 id="live-editing-in-chrome">Live-editing in Chrome</h4>
+<p>To see live editing in Chrome, you can select a CSS or JavaScript file from the sources sidebar pane...</p>
+<p><img src="images/chrome-devtools-6.png" alt="Chrome DevTools Screenshot 6"></p>
+<p>or by selecting a CSS file from the Styles sub-panel in the <em>Elements</em> panel.</p>
+<p><img src="images/chrome-devtools-7.png" alt="Chrome DevTools Screenshot 7"></p>
+<p><em>Clicking on <code>style.css:1</code> will pull up the CSS file loaded from the network</em></p>
+<p>Once you have the CSS file pulled up, right-click within the <em>Sources</em> panel code view and select <code>Map to Network Resource</code>.</p>
+<p><img src="images/chrome-devtools-8.png" alt="Chrome DevTools Screenshot 8"></p>
+<p><em>If you started from the Elements panel, the option will say <code>Map to File System Resource</code> instead.</em></p>
+<p>Chrome will then pop open the file quick-finder to select the local or network file that matches the current file. Once you select the file, Chrome will ask you to restart for the changes to take affect.</p>
+<p><img src="images/chrome-devtools-9.png" alt="Chrome DevTools Screenshot 9"></p>
+<p>By default, Chrome Devtools will load the files from the server, which is what you&#39;re accessing and manipulating in the <em>Elements</em> panel. With Workspaces enabled, we have local copies of the same files available for editing.</p>
+<p>Below is a shot of the network files and local file resources expand; network files have a globe icon and local files have a folder icon.</p>
+<p><img src="images/chrome-devtools-10.png" alt="Chrome DevTools Screenshot 10"></p>
+<p>When we map a network and local resources together, Chrome will reflect the local changes we&#39;re making on the live site we&#39;re viewing. You&#39;ll know everything is setup if you only see your local file afterwards, but no corresponding network resource.</p>
+<p><img src="images/chrome-devtools-11.png" alt="Chrome DevTools Screenshot 11"></p>
+<p>Now when you make edits to your CSS &amp; JS, they&#39;ll be reflected live in the browser without refreshing!</p>
+<p><img src="images/devtools-live-edit.gif" alt="Chrome DevTools Screenshot 12"></p>
+<p>The changes you make are also saved to the file system just like a normal editor with the <code>(cmd + S)</code> shortcut. You can also edit and make changes to other files including HTML files, however these changes won&#39;t be reflected live.</p>
+<h4 id="resources">Resources</h4>
+<ul>
+<li><a href="https://developer.chrome.com/devtools/docs/authoring-development-workflow">Chrome Developer Tools: Authoring and Development Workflow</a></li>
+<li><a href="https://developers.google.com/web/tools/iterate/inspect-styles/basics">Google Developers: Inspect and Tweak Your Pages</a></li>
+<li><a href="https://developers.google.com/web/tools/setup/workspace/setup-workflow">Google Developers: Set up persistence with DevTools Workspaces</a></li>
+<li><a href="https://remysharp.com/2012/12/21/my-workflow-never-having-to-leave-devtools">Remy Sharp: My workflow - Never having to leave DevTools</a></li>
+</ul>
+<h2 id="if-you-are-already-done-or-finish-early-">If you are already done or finish early...</h2>
+<ul>
+<li>Help at least two of your classmates by <a href="https://help.github.com/articles/using-pull-requests/#reviewing-proposed-changes">reviewing their code</a></li>
+<li><a href="http://discover-devtools.codeschool.com/">Code School: Discover DevTools (Ch. 1 &amp; 2)</a></li>
+<li><a href="https://www.codeschool.com/courses/assembling-sass">Code School: Assembling Sass (Level 1)</a></li>
+</ul>

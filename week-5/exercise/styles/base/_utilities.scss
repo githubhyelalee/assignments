@@ -1,0 +1,25 @@
+//Variables
+$full-height: 100%;
+
+
+// Mixins
+@mixin cf {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+ }
+
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin frame {
+  background-color: #FCFCFC;
+  border: 1px solid #333;
+  border-radius: 1px;
+  height: $full-height;
+  vertical-align: middle;
+  text-align: center;
+}

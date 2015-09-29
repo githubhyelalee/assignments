@@ -1,0 +1,203 @@
+<h1 id="week-1-intro-to-course-front-end-tools">Week 1: Intro to Course &amp; Front-end Tools</h1>
+<blockquote>
+<p><em>Design is not just what it looks like and feels like. Design is how it works. –Steve Jobs</em></p>
+</blockquote>
+<h2 id="table-of-contents">Table of Contents</h2>
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+<ul>
+<li><a href="#day-1-getting-setup">Day 1: Getting setup</a><ul>
+<li><a href="#concepts">Concepts</a></li>
+<li><a href="#tools--technologies">Tools &amp; Technologies</a></li>
+<li><a href="#themes">Themes</a></li>
+<li><a href="#quiz-1-htmlcss-assessment">Quiz 1: HTML/CSS Assessment</a></li>
+</ul>
+</li>
+<li><a href="#day-2-continue-setuptool-introduction">Day 2: Continue setup/tool introduction</a><ul>
+<li><a href="#intro-to-version-control">Intro to Version Control</a><ul>
+<li><a href="#what-is-gitgithub">What is Git/GitHub?</a></li>
+<li><a href="#github-setup">GitHub Setup</a></li>
+<li><a href="#gitgithub-concepts">Git/GitHub Concepts</a><ul>
+<li><a href="#repository">Repository</a></li>
+<li><a href="#branch">Branch</a></li>
+<li><a href="#commit">Commit</a></li>
+<li><a href="#pushpull-sync">Push/Pull (Sync)</a></li>
+<li><a href="#pull-request">Pull Request</a></li>
+<li><a href="#merge">Merge</a></li>
+</ul>
+</li>
+<li><a href="#github-development-workflow">GitHub development workflow</a></li>
+</ul>
+</li>
+<li><a href="#prepros">Prepros</a></li>
+<li><a href="#chrome-devtools">Chrome DevTools</a></li>
+<li><a href="#atom">Atom</a></li>
+</ul>
+</li>
+<li><a href="#homework-getting-familiar-with-github">Homework: Getting familiar with GitHub</a></li>
+</ul>
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+<h2 id="day-1-getting-setup">Day 1: Getting setup</h2>
+<p>In this course, we&#39;ll be focusing on intermediate-to-advanced front-end web development techniques and best practices. We&#39;ll be introducing the following concepts, tools, and technologies:</p>
+<h3 id="concepts">Concepts</h3>
+<ul>
+<li><strong>Responsive web design</strong> (cross-device)</li>
+<li><strong>CSS authoring</strong> (preprocessors)</li>
+<li><strong>CSS architecture/frameworks</strong> (DRY/SMACSS)</li>
+<li><strong>HTML prototyping</strong> (usability testing)</li>
+<li><strong>JavaScript</strong> (interactive programming)</li>
+</ul>
+<h3 id="tools-technologies">Tools &amp; Technologies</h3>
+<ul>
+<li><em><strong>Git &amp; GitHub</strong></em> for version control &amp; collaboration</li>
+<li><em><strong>Prepros</strong></em> for CSS compiling and build processing</li>
+<li><em><strong>Chrome DevTools</strong></em> for advanced CSS/JavaScript debugging</li>
+<li><em><strong>Atom</strong></em> for text editing with built-in Git integration</li>
+<li><em><strong>Codepen</strong></em> for in-browser, front-end demonstrations and inspiration</li>
+</ul>
+<p>The goal for this course is for each student to have a basic grasp of the tooling, yet a thorough understanding of the concepts as presented and their necessity in the web design &amp; development process.</p>
+<p>You&#39;ll also notice a few over-arching themes being repeated throughout the course that, while not core to curriculum, will provide a better understanding of how the development process works at large.</p>
+<h3 id="themes">Themes</h3>
+<ul>
+<li><strong>Marketing vs product design</strong> (website vs web-app)</li>
+<li><strong>Craftsmanship</strong> (hacking)</li>
+<li><strong>Agile development</strong></li>
+<li><strong>Open-source software</strong></li>
+<li><strong>Contribution/Attribution</strong> (on the web)</li>
+</ul>
+<h3 id="quiz-1-html-css-assessment">Quiz 1: HTML/CSS Assessment</h3>
+<p>Render the pricing table image in HTML/CSS, including the product title, prices, details, and action items (buttons).</p>
+<p>The styling of the page and pricing table should match the following screenshot:</p>
+<p><a href="https://d13yacurqjgara.cloudfront.net/users/25867/screenshots/842947/attachments/210494/pricing-table-01.jpg">Pricing Table  (PNG)</a></p>
+<p>Fork the following project: <a href="http://codepen.io/micjamking/pen/669f0200762bd219b2d26e9864de80d7/">CodePen - Pricing Table</a></p>
+<p>Post link to GitHub in the  <a href="https://github.com/kcc-nma-art258/assignments/issues/24">Quiz 1 discussion</a></p>
+<p>Let&#39;s get started by introducing the foundational concept that will help us track and share our code, <strong>version control</strong>.</p>
+<h2 id="day-2-continue-setup-tool-introduction">Day 2: Continue setup/tool introduction</h2>
+<h3 id="intro-to-version-control">Intro to Version Control</h3>
+<p><strong>Version control</strong> (also known as <strong>source control management</strong>) is a system that records changes to a file or set of files over time so that you can recall specific versions later. Many popular systems include aspects of version control built-in to the software like word processors (ie. Google Docs, etc) and content management systems (ie. WordPress, etc).</p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Revision_control">Wikipedia: Revision Control</a></li>
+<li><a href="https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control">Git SCM: Getting started - about version control</a></li>
+</ul>
+<p>There&#39;s multiple types of version control systems available, including <a href="http://www.nongnu.org/cvs/">CVS</a>, <a href="http://subversion.apache.org/">SVN</a>, <a href="https://git-scm.com/">Git</a> et al. Each system is catered to a specific type of workflow for collaboration, but generally all provide the same file versioning/history capabilities.</p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/List_of_revision_control_software">Wikipedia: List of types of version control</a></li>
+</ul>
+<p><strong>Video: <a href="https://vimeo.com/41027679">Git Basics: What is Version Control?</a></strong>
+<a href="https://vimeo.com/41027679"><img src="images/git/what-is-version-control.png" alt="What is Version Control"></a></p>
+<h4 id="what-is-git-github-">What is Git/GitHub?</h4>
+<p><a href="https://git-scm.com/"><img src="images/git/git-logo.png" alt="Git SCM Logo"></a></p>
+<p><strong><a href="https://git-scm.com/">Git</a> is the fastest growing and most popular version control system used to track and share documents today.</strong></p>
+<p>Git provides common version control capabilities, but with it&#39;s own, unique organizational workflow. Git&#39;s <a href="#branch">branching model concept</a> encourages a <em>feature-based workflow</em>, allowing people to seamlessly switch back and forth between different features they&#39;re working on and experiment without impacting the integrity of their code-base.</p>
+<p>Git also allows groups of people to work on the same documents (often code) at the same time, and without stepping on each other&#39;s toes. It&#39;s a distributed, version control system.</p>
+<p><a href="https://github.com/"><img src="images/git/github-logo.png" alt="Github"></a></p>
+<p><strong><a href="https://github.com/">GitHub</a> is a web-based, Git repository hosting service. <em>(ie. a &#39;hub&#39; for Git repo&#39;s, get it?)</em></strong></p>
+<p>Unlike Git, which is strictly a command-line (CLI) tool, GitHub provides a web-based graphical interface and desktop client for managing Git repositories.</p>
+<p>GitHub also provides access control and several collaboration features such as bug tracking, feature requests, task management, and wikis for every project.</p>
+<h4 id="github-setup">GitHub Setup</h4>
+<ol>
+<li>Sign up for a <a href="https://github.com/join">free GitHub account</a><ul>
+<li>Setup <a href="https://github.com/blog/1614-two-factor-authentication">Two Factor Authentication (2FA)</a> as an additional security measure</li>
+</ul>
+</li>
+<li>Complete <a href="http://goo.gl/forms/QubL6AJy0F">ART258 GitHub account form</a></li>
+<li>*Download <a href="https://desktop.github.com/">GitHub Desktop app</a><ul>
+<li><a href="https://central.github.com/mac/latest">GitHub for Mac</a></li>
+<li><a href="https://github-windows.s3.amazonaws.com/GitHubSetup.exe">GitHub for PC</a></li>
+</ul>
+</li>
+</ol>
+<p><em>*The GitHub Desktop app should already be installed on the KOA 103 studio classroom computers.</em></p>
+<h4 id="git-github-concepts">Git/GitHub Concepts</h4>
+<ul>
+<li><a href="https://git-scm.com/about/">Git: The advantages of Git compared to other source control systems</a></li>
+<li><a href="https://git-scm.com/book/en/v2/Getting-Started-Git-Basics">Git: Getting started - Git basics</a></li>
+<li><a href="https://help.github.com/">GitHub Help</a></li>
+</ul>
+<h5 id="repository">Repository</h5>
+<p>A Git repository is nothing more than a directory (ie. folder) on a computer. Any file in your &#39;repo&#39; will be tracked and a history of the changes will be recorded (unless <a href="http://git-scm.com/docs/gitignore">explicitly ignored</a>, which we&#39;ll talk about a bit later).</p>
+<h5 id="branch">Branch</h5>
+<p>A Git branch is a working copy of your code, <em>in a specific state</em>. When you&#39;re working on a project, you&#39;re going to have a bunch of different features or ideas in progress at any given time – some of which are ready to go, and others which are not. Branching exists to help you manage this workflow.</p>
+<h5 id="commit">Commit</h5>
+<p>A commit saves your current changes to your current branch. Once you start making changes in a repository, Git will start tracking those changes. Whenever you add, edit, or delete a file, you&#39;re making a commit, and adding them to your branch. This process of adding commits keeps track of your progress as you work on a feature branch.</p>
+<h5 id="push-pull-sync-">Push/Pull (Sync)</h5>
+<p>A good practice in web development is to create backups of your projects. This is where <em><strong>GitHub</strong></em> comes in, as a central repository hosting service for Git projects. Once you&#39;ve wrapped up with your coding session, it&#39;s a good idea to sync your local repository with GitHub so all of your code changes are archived. If you&#39;re working on a team or between multiple machines, it&#39;s also a good idea to sync your local repository before you start working as well.</p>
+<h5 id="pull-request">Pull Request</h5>
+<p>In the <em><a href="#github-development-workflow">GitHub development workflow</a></em>, theres a <code>master</code> branch that keeps the final record of the code ready for deployment. To get code from our feature branches in to our master branch, we need to make a pull request.</p>
+<h5 id="merge">Merge</h5>
+<p>In Git, merging brings the changes in two branches together. A pull request is a request to merge a set of commits from one branch in to another. Merges can be performed on your local machine to combine changes from two feature branches before syncing, and making a pull request to the <code>master</code> branch on Github.</p>
+<h4 id="github-development-workflow">GitHub development workflow</h4>
+<p>As we go through the semester, we&#39;ll cover different aspects of Git &amp; GitHub within our workflow. At a <a href="https://en.wikipedia.org/wiki/High-_and_low-level">high-level</a>, we&#39;ll be following the <a href="https://guides.github.com/introduction/flow/">GitHub-Flow</a> methodology for development with some slight adjustments for this course.</p>
+<ul>
+<li>Anything in the <code>master</code> branch is deployable</li>
+<li>To work on something new, create a descriptively named branch off of <code>master</code> (ie: <code>home-page-bug-fix</code>)</li>
+<li>Commit to that branch locally and regularly push (ie. sync) your work to the same named branch on GitHub</li>
+<li>When you need feedback or help, create an issue and mention myself and/or another student using the @username syntax (ie, @micjamking)</li>
+<li>When you are ready to submit your code assignment, create a pull request:<ul>
+<li>Have 2 other students review your work by mentioning them using the @username syntax in your pull request description (not the title!)</li>
+<li>If your classmates find any issues, make the fixes locally and push the changes to the same remote branch</li>
+<li>Once your code has been reviewed by 2 classmates and your code is ready to turn in, create a new comment on your pull request with the words <code>@micjamking: Final Submission</code>; this will send me a notification that your assignment is ready to be graded.</li>
+</ul>
+</li>
+</ul>
+<h3 id="prepros">Prepros</h3>
+<p><a href="https://prepros.io/"><img src="images/prepros/prepros-logo.png" alt="Prepros Logo"></a></p>
+<p>One of the bigger concepts of the semester will be authoring CSS using <a href="http://sass-lang.com/">Sass</a>. Sass (Syntactically Awesome Stylesheets) is a scripting language that preprocesses (ie. compiles in to) CSS. Sass extends CSS, providing features that are not yet available like variables, nesting of rules, mixins/functions, and operators to simplify our styling process and make our code more modular, scalable, and maintainable.</p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Sass_(stylesheet_language">Wikipedia: Sass</a>)</li>
+</ul>
+<p>Since browsers only read CSS in its original syntax, we need to use a program to compile our written Sass in to CSS so be served up to the browser. Similar to Git and other front-end tools, Sass was built as a command-line utility. In this course, we&#39;ll be using <strong><a href="https://prepros.io/">Prepros</a></strong>, a third-party graphical user-interface (GUI) for CSS preprocessing, to assist us.</p>
+<p>Along with Sass compiling, Prepros will also help out in other aspects of our web development build cycle, including:</p>
+<ul>
+<li>CSS prefixing</li>
+<li>Browser refresh &amp; behavior synchronization</li>
+<li>File concatenation &amp; minification</li>
+<li>Image optimization</li>
+<li>FTP client</li>
+</ul>
+<p>We&#39;ll be diving in to this tool starting Week 2 and will cover each of the features above in detail in the subsequent weeks.</p>
+<h3 id="chrome-devtools">Chrome DevTools</h3>
+<p><a href="https://developers.google.com/web/tools/chrome-devtools/"><img src="images/devtools/chrome-devtools-logo.png" alt="Chrome Devtools Logo"></a></p>
+<p>When developing a website or application using web technologies, it&#39;s necessary to be able to debug the site for issues while viewing it in the browser or on a device. <a href="https://developers.google.com/web/tools/chrome-devtools/">Google Chrome&#39;s Developer Tools</a> (ie. Chrome DevTools) are a set of built-in authoring and debugging tools for web technologies (HTML/CSS/JavaScript).</p>
+<p>Chrome Developer Tools (DevTools) helps you develop, test, and debug your web sites and applications directly from the Google Chrome browser. DevTools provides web developers the following capabilities which are essential to create usable, well functioning websites:</p>
+<ul>
+<li>Inspection of the Document Object Model (DOM) and styles of the currently running page.</li>
+<li>Debug JavaScript with breakpoints and the console.</li>
+<li>Interact with a page and record performance using the Timeline &amp; Auditing tools.</li>
+<li>Test your pages on mobile using device emulation mode.</li>
+</ul>
+<p>Chrome DevTools can also serve as a complete authoring environment, similar to traditional text editors like <a href="#atom">Atom</a> or Sublime Text, however setup is an advanced topic and only certain aspects will be covered in this course.</p>
+<p>If you&#39;re completely unfamiliar with the concept of debugging or have used other debuggers like Firebug but are inexperienced with Chrome DevTools, I highly recommend checking out the free online training course on <a href="https://www.codeschool.com/courses/discover-devtools">Chrome DevTools by Code School</a>. It&#39;s taught by <a href="http://www.paulirish.com/">Paul Irish</a>, one of the Chrome Developer team members, but uses <a href="https://www.codeschool.com/">Code Schools</a> highly interactive, educational platform, so I find it more approachable than the Chrome DevTool documentation as an introduction to the tool.</p>
+<p>We&#39;ll be covering different aspects and topics on Chrome DevTools throughout the semester as we go through the web development process.</p>
+<h3 id="atom">Atom</h3>
+<p><a href="https://atom.io/"><img src="images/atom/atom-logo.png" alt="Atom Logo"></a></p>
+<p><strong><a href="https://atom.io/">Atom</a> is a &quot;hackable text editor for the 21st century&quot;.</strong> Similar to <em><a href="http://www.adobe.com/products/dreamweaver.html">Adobe Dreamweaver</a></em>, <em><a href="http://brackets.io/">Brackets</a></em>, <em><a href="http://www.sublimetext.com/">Sublime Text</a></em>, and <em><a href="https://macromates.com/">Textmate</a> (for OSX)</em>, Atom is a standalone text editor built for coding/programming. However, unlike the above editors, Atom comes with <a href="https://atom.io/docs/v1.0.7/using-atom-version-control-in-atom">built-in Git integration</a>, is <a href="https://atom.io/docs/v1.0.7/hacking-atom-tools-of-the-trade">completely customizable</a> through JavaScript &amp; CSS, and best of all, is <a href="http://blog.atom.io/2014/05/06/atom-is-now-open-source.html">open-source</a> (ie. free).</p>
+<p><strong>Video: <a href="https://youtu.be/Y7aEiVwBAdk">GitHub presents: Atom 1.0</a></strong>
+<a href="https://youtu.be/Y7aEiVwBAdk"><img src="images/atom/atom.png" alt="Atom"></a></p>
+<p>As a web developer, a text editor is your primary tool for crafting sites and apps, so finding an editor that you&#39;re comfortable with and is configurable to match your workflow is important.</p>
+<p>Below are a few features which are important to have in a text editor.</p>
+<ul>
+<li>Autocompletion</li>
+<li>File browser/file search</li>
+<li>Extensibility/plugins for additional functionality</li>
+<li>Theming</li>
+</ul>
+<p>Along with the above features, Atom also includes <a href="https://atom.io/docs/v1.0.7/using-atom-version-control-in-atom">integration with Git</a>, providing the following additional capabilities:</p>
+<ul>
+<li>Quickly rewind to a previous commit (<code>cmd-alt-z</code>)</li>
+<li>Display the list of all the untracked (ie. new) and modified files in the project (<code>cmd-shift-b</code>)</li>
+<li>Edit commit messages (if using Git CLI)</li>
+<li>Highlight the status of our untracked and modified files within the tree-view, gutter and status bar of the Atom interface.  </li>
+</ul>
+<p>Students may use any text editor they prefer for this course, however Atom will assist in learning the Git concepts and can be configured to fit any particular workflow. It is recommended to atleast try the editor for the initial few weeks, since it will be used for presenting the exercises and should be easier to follow along with.</p>
+<h2 id="homework-getting-familiar-with-github">Homework: Getting familiar with GitHub</h2>
+<ul>
+<li>Create a local repository called <code>inspiration</code> (it can be whatever you want) and add a <code>README.md</code> file. In the file, add a link to something that inspires you online. Sync this with your GitHub account online by 11:59pm Wednesday night.</li>
+<li>Read the <a href="https://guides.github.com/">GitHub Guides</a> <em>(approx. 1 hr 23 min of reading)</em>. Specifically:<ul>
+<li><a href="https://guides.github.com/introduction/flow/">GitHub Flow</a></li>
+<li><a href="https://guides.github.com/activities/hello-world/">Hello World</a></li>
+<li><a href="https://guides.github.com/introduction/getting-your-project-on-github/">Getting your project on GitHub</a></li>
+</ul>
+</li>
+<li>Review links from Day 2 outline (above)</li>
+</ul>
