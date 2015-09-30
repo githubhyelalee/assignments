@@ -28,15 +28,15 @@
 @function exponent($base, $exponent){
   // reset value
   $value: $base;
-  
+
   // Positive integers get multiplied
   @if $exponent > 1 {
     @for $i from 2 through $exponent {
       $value: $value * $base;
     }
   }
-  
-  // Negitive integers get divided. 
+
+  // Negitive integers get divided.
   // A number divided by itself is 1
   @if $exponent < 1 {
     @for $i from 0 through -$exponent {
@@ -50,7 +50,7 @@
 
 /**
  * Type Scale Calculator
- * 
+ *
  * Create typographic scales
  * @param {$i} increment of scale; 0 is base
  * @param {$scale} scale ratio; defaults to 1.25
